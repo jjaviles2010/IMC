@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">IMC</string>
+    <string name="app_title">Calculadora IMC</string>
+    <string name="tv_altura">Altura:</string>
+    <string name="tv_peso">Peso:</string>
+    <string name="btn_calcular">CALCULAR</string>
+    <string name="btn_limpar">LIMPAR</string>
+    <string name="tvimcresult">20.1</string>
+    <string name="tvpesoresult">Peso Ideal</string>
+    <string name="tvauthor">Desenvolvido por Jose Javier</string>
+    <string name="tvsexo">Sexo:</string>
+    <string name="label_masculino">Masculino</string>
+    <string name="label_feminino">Feminino</string>
+</resources>
