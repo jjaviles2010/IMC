@@ -54,7 +54,24 @@ class ResultadoActivity : AppCompatActivity() {
     }
 
     private fun calcularFeminino(imc: Double) {
+        tvIMC.text = imc.toFixed(2)
 
+        if (imc < 19) {
+            tvStatusIMC.text = "Abaixo do peso"
+            configuraImagem(R.drawable.masc_abaixo)
+        } else if (imc < 23.9) {
+            tvStatusIMC.text = "Normal"
+            configuraImagem(R.drawable.masc_ideal)
+        } else if (imc < 29.9) {
+            tvStatusIMC.text = "Obesidade Leve"
+            configuraImagem(R.drawable.masc_sobre)
+        } else if (imc < 38.9) {
+            tvStatusIMC.text = "Obesidade Moderada"
+            configuraImagem(R.drawable.masc_obeso)
+        } else {
+            tvStatusIMC.text = "Obesidade extrema"
+            configuraImagem(R.drawable.masc_extremo_obeso)
+        }
     }
 
 }
